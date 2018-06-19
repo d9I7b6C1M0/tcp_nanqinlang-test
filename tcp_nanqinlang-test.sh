@@ -120,7 +120,7 @@ dpkg_list(){
 
 # (1)while kernel is 4.10.10
 ver_4.10.10(){
-	[[ ! -f /lib/modules/`uname -r`/kernel/net/ipv4/tcp_nanqinlang.ko ]] && echo -e "${Info} loading mod" && cd /lib/modules/`uname -r`/kernel/net/ipv4 && wget -O tcp_nanqinlang.ko "https://raw.githubusercontent.com/nanqinlang/tcp_nanqinlang-test/master/tcp_nanqinlang.ko" && insmod tcp_nanqinlang.ko && depmod -a
+	[[ ! -f /lib/modules/`uname -r`/kernel/net/ipv4/tcp_nanqinlang.ko ]] && echo -e "${Info} loading mod" && cd /lib/modules/`uname -r`/kernel/net/ipv4 && wget -O tcp_nanqinlang.ko "https://raw.githubusercontent.com/iiiiiii1/tcp_nanqinlang-test/master/tcp_nanqinlang.ko" && insmod tcp_nanqinlang.ko && depmod -a
 	[[ ! -f /lib/modules/`uname -r`/kernel/net/ipv4/tcp_nanqinlang.ko ]] && echo -e "${Error} download mod failed,please check !" && exit 1
 }
 
