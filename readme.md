@@ -1,3 +1,5 @@
+## Debian的超级暴力版魔改BBR一键脚本
+
 # tcp_nanqinlang
 
 [![build](https://github.com/nanqinlang/SVG/blob/master/build%20passing.svg)](https://github.com/nanqinlang/tcp_nanqinlang-test)
@@ -33,3 +35,21 @@ make install
 
 If you have no a environment, you should build that.  
 via: https://sometimesnaive.org/article/linux/technique/tcp_nanqinlang-manual-debian
+
+Debian的超级暴力版魔改BBR一键脚本
+
+说明：超级暴力版魔改BBR，南琴浪大佬的一键脚本，适用只Debian系统。
+
+安装
+
+Github地址：https ：//github.com/nanqinlang/tcp_nanqinlang-test
+
+Debian 7，8，9系统都可以，使用命令：
+
+wget https://raw.githubusercontent.com/iiiiiii1/tcp_nanqinlang-test/master/tcp_nanqinlang-test.sh
+
+bash tcp_nanqinlang-test.sh
+
+使用脚本后会出现选项：先选择更换内核，然后重启,重启后，再使用刚才的命令进行第2步开启超级暴力模式。
+
+如果删除在内核环节出现abort kernel removal？(中止內核刪除？)提示时，请选择NO。
